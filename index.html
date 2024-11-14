@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href=" Family: [Inter](https://fonts.google.com/specimen/Inter)" />
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /*...............B0DY....................*/
+
+      body {
+        background: rgb(73, 64, 104);
+        font-size: 14px;
+      }
+      /*................CONTAINER............*/
+      .container {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        height: 100vh;
+
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      h5 {
+        color:  hsl(75, 94%, 57%);
+      }
+      img {
+        border-radius: 50%;
+      }
+      button {
+        background-color: rgb(59, 57, 57);
+        color: white;
+        width: 250px;
+        height: 40px;
+        font-family: "inter";
+
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+      }
+
+      .item {
+        height: 100%;
+        width: 400px;
+        margin-top: 10px;
+
+        border-radius: 15px;
+
+        background-color: rgb(48, 46, 46);
+      }
+
+      p {
+        color:hsl(0, 0%, 8%);
+        font-size: 14px;
+      }
+
+      
+
+      footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "inter";
+        font-weight: 700;
+        font-size: 100px;
+
+      }
+      /*------------BUTTON-HOVER-------*/
+      button:hover {
+        background-color: hsl(75, 94%, 57%);
+        transition: background-color 0.3s ease;
+        color: black;
+      }
+
+      /* Styles for screens with a maximum width of 1440px */
+      @media (max-width: 1440px) {
+        /*CSS rules for large screens */
+        .container {
+          margin-top: 50px;
+          margin-bottom: 50px;
+          justify-content: center;
+        }
+        body {
+          background-color: hsl(0, 0%, 8%);
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+      }
+
+      /* Styles for screens with a minimum width of 375px */
+      @media (min-width: 375px) {
+        /*  CSS rules for large screens */
+        .container {
+          height: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        .item {
+          padding-top: 50px;
+        }
+        body {
+          background-color: hsl(0, 0%, 8%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item container">
+        <img src="./assets/images/avatar-jessica.jpeg" />
+        <h3>Jessica Randall</h3>
+        <h5>London, United Kingdom</h5>
+        <p>"Front-end developer and avid reader."</p>
+
+        <button class="gold-button">Github</button>
+        <button>Frontend</button>
+        <button>Mentor</button>
+        <button>LinkedIn</button>
+        <button>Twitter</button>
+        <button>Instagram</button>
+      </div>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Matthew A U</a>.
+      </div>
+    </footer>
+  </body>
+</html>
